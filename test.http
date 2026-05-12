@@ -1,0 +1,34 @@
+POST http://localhost:3000/api/ai/customer-search
+Content-Type: application/json
+
+{
+  "message": "Eskişehir merkezde 2 saat içinde kuryeyle teslim edilecek siyah 3XL tişört göster"
+}
+###
+
+POST http://localhost:3000/api/ai/seller-stock
+Content-Type: application/json
+
+{
+  "message": "Bugün 5 tane M beden kırmızı elbise, 2 tane L beden kot ceket geldi"
+}
+###
+
+POST http://localhost:3000/api/ai/seller-insight
+Content-Type: application/json
+
+{
+  "totalOrdersToday": 12,
+  "pickupOrders": 7,
+  "courierOrders": 5,
+  "lowStockProducts": ["Siyah 3XL Tişört", "Kırmızı Elbise"],
+  "bestSellingCategory": "büyük beden tişört"
+}
+###
+
+POST http://localhost:3000/api/ai/customer-search
+Content-Type: application/json
+
+{
+  "message": "Akşama davetim var. Eskişehir merkezde hızlı teslim siyah oversize gömlek lazım"
+}
